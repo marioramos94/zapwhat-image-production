@@ -42,10 +42,7 @@ http.listen(3000, function(){
   console.log('Escuchando en el puerto 3000');
 });
 
+//Mario Estuvo Aqui
 app.use(express.static(__dirname + '/public'))
-
-app.get("/home", (req, res) => {
-    res.sendFile(__dirname + '/public/index.html')
-  });
 
 app.listen(80, () => console.log(`Server listening on port 80`));
